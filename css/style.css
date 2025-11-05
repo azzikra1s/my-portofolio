@@ -351,15 +351,16 @@ nav.scrolled {
 }
 
 .profile-image {
-	width: 320px;
-	height: 320px;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 3px solid #111;
-	position: relative;
-	z-index: 2;
-	transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;         /* menjaga rasio tanpa distorsi */
+    object-position: center 27%; /* geser tampilan (ubah persentase sesuai posisi wajah) */
+    border: 3px solid #111;
+    position: relative;
+    z-index: 2;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
 }
 
 .profile-image:hover {
